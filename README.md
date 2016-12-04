@@ -3,6 +3,9 @@ a small wrapper for different types of calls, it can be used to spawn an externa
 
 __Keep in mind this offers no Security, untrusted data should never reach any of these calls__
 
+Written for Python 2 but can easily be converted to 3
+Requirements: subprocess32
+
 Types of calls supported:
 * subprocess (spawns external process)
 * subprocess with Shell
