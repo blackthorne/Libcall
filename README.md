@@ -1,7 +1,7 @@
 # Libcall
-a wrapper for different types of different types of external calls it can be used to spawn an external process or just python code from a new thread or dedicated process with timeout support. This small lib can be useful in an agent within a distributed system where you need a uniform yet flexible way to invoke different types of calls with timeouts. 
+a small wrapper for different types of different types of external calls it can be used to spawn an external process or just python code from a new thread or dedicated process with timeout support. This small lib adds logging and error handling in a way that can be useful for running in agents within a distributed system where you need a uniform yet flexible way to invoke different types of calls and possibly with timeouts. 
 
-__Keep in mind this offers no Security, untrusted data should never reach any these__
+__Keep in mind this offers no Security, untrusted data should never reach any of these calls__
 
 Types of calls supported:
 * subprocess
