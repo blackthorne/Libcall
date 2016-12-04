@@ -5,9 +5,9 @@ __Keep in mind this offers no Security, untrusted data should never reach any of
 
 Written for Python 2 but can easily be converted to 3
 
-Requirements: subprocess32
+Requirements: **subprocess32**
 
-Status: highly experimental
+Status: **highly experimental**
 
 Types of calls supported:
 * subprocess (spawns external process)
