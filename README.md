@@ -27,6 +27,7 @@ stdout and stderr can be reached using a.stdout or a.stderr
         print 'end'
         """
         d = call.Command(code,'python-basic', logger=logger, timeout=2)
+        d.start()
 
 > this timeout feature is not 100% reliable for this type of call (it tries to find and kill a thread internally)
 
