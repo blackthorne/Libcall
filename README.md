@@ -1,11 +1,13 @@
 # Libcall
-a small wrapper for different types of calls, it can be used to spawn an external process or to just run python code from string onto a new thread with _timeout_ support. This small lib adds logging and error handling in a way that can be useful for running in agents within a distributed system where you need a uniform yet flexible way to invoke different types of calls and possibly with timeouts. You will get a handle that you can use to retrieve at any point the _status_ of the running call or to order it to _stop_ always using the same API regardless of the call type. 
+a small wrapper for different types of calls, it can be used to spawn an external process or to just run python code from string onto a new thread with _timeout_ support. This small lib adds logging and error handling in a way that can be useful for running in agents within a distributed system where you need a uniform yet flexible way to invoke different types of calls and possibly with timeouts. You will get a handle that you can use to retrieve the _status_ of the running call or to order it to _stop_ at any point in time always using the same API regardless of the call type. 
 
 __Keep in mind this offers no Security, untrusted data should never reach any of these calls__
 
 Written for Python 2 but can easily be converted to 3
 
 Requirements: subprocess32
+
+Status: highly experimental
 
 Types of calls supported:
 * subprocess (spawns external process)
