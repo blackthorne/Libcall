@@ -1,5 +1,12 @@
 # Libcall
-a wrapper for different types of different types of external calls it can be used to spawn an external process or just python code from a new thread or dedicated process with timeout support
+a wrapper for different types of different types of external calls it can be used to spawn an external process or just python code from a new thread or dedicated process with timeout support. This small lib can be useful in an agent within a distributed system where you need a uniform yet flexible way to invoke different types of calls with timeouts. 
+
+** Keep in mind this offers no Security, untrusted data should never reach any these **
+
+Types of calls supported:
+* subprocess
+* subprocess with Shell
+* Python (threaded)
 
 ### Spawn new process
         a = call.Command(['ls','-l','/'],'subprocess', logger=logger)
