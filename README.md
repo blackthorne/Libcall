@@ -26,7 +26,7 @@ stdout and stderr can be reached using a.stdout or a.stderr
 
 
 ### Python Call with timeout
-        """
+        code = """
         import time
         while True:
             time.sleep(0.1)
